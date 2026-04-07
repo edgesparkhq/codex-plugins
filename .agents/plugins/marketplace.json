@@ -1,0 +1,20 @@
+{
+  "name": "edgespark-codex-plugins",
+  "interface": {
+    "displayName": "EdgeSpark Official"
+  },
+  "plugins": [
+    {
+      "name": "edgespark",
+      "source": {
+        "source": "local",
+        "path": "./plugins/edgespark"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
