@@ -1,0 +1,47 @@
+{
+  "name": "edgespark",
+  "version": "0.0.1",
+  "description": "Build and deploy full-stack EdgeSpark apps from Codex.",
+  "author": {
+    "name": "EdgeSpark",
+    "email": "support@edgespark.dev",
+    "url": "https://edgespark.dev"
+  },
+  "homepage": "https://edgespark.dev",
+  "repository": "https://github.com/edgesparkhq/edgespark-codex-plugins",
+  "license": "MIT",
+  "keywords": [
+    "edgespark",
+    "codex",
+    "edge",
+    "deployment",
+    "full-stack",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "EdgeSpark",
+    "shortDescription": "Build and deploy EdgeSpark apps from Codex",
+    "longDescription": "Build, review, and deploy full-stack EdgeSpark apps with the EdgeSpark CLI, generated server types, and docs MCP access.",
+    "developerName": "EdgeSpark",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://edgespark.dev",
+    "privacyPolicyURL": "https://edgespark.dev",
+    "termsOfServiceURL": "https://edgespark.dev",
+    "defaultPrompt": [
+      "Build a full-stack EdgeSpark app from this repo",
+      "Review this EdgeSpark app and fix deployment issues",
+      "Use EdgeSpark docs and generated types before editing server code"
+    ],
+    "brandColor": "#0EA5E9",
+    "composerIcon": "./assets/logoicon.svg",
+    "logo": "./assets/logo-edgespark-512.png",
+    "screenshots": []
+  }
+}
