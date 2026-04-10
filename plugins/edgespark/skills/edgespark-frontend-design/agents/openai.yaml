@@ -1,0 +1,4 @@
+interface:
+  display_name: "EdgeSpark Frontend Design"
+  short_description: "Design bold, distinctive EdgeSpark UIs"
+  default_prompt: "Use $edgespark-frontend-design to design or redesign this EdgeSpark frontend with strong typography, asymmetrical composition, refined motion, and authentic visual content."
