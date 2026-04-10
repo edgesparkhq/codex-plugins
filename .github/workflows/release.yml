@@ -31,8 +31,7 @@ jobs:
 
       - name: Build release zip
         run: |
-          cd plugins
-          zip -r "$GITHUB_WORKSPACE/edgespark-codex-plugins.zip" edgespark/ -x "*.git*"
+          zip -r edgespark-codex-plugins.zip . -x ".git/*"
 
       - name: Create GitHub release
         env:
