@@ -1,6 +1,5 @@
 {
   "name": "edgespark-codex-plugins",
-  "version": "0.0.2",
   "interface": {
     "displayName": "EdgeSpark Official"
   },
