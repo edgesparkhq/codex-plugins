@@ -2,7 +2,7 @@
   "mcpServers": {
     "edgespark-docs": {
       "type": "http",
-      "url": "https://docs.edgespark.dev/mcp"
+      "url": "https://mcp.edgespark.dev/docs"
     }
   }
 }
