@@ -8,7 +8,7 @@
     "url": "https://edgespark.dev"
   },
   "homepage": "https://edgespark.dev",
-  "repository": "https://github.com/edgesparkhq/edgespark-codex-plugins",
+  "repository": "https://github.com/edgesparkhq/codex-plugins",
   "license": "MIT",
   "keywords": [
     "edgespark",
@@ -40,8 +40,8 @@
       "Use EdgeSpark docs and generated types before editing server code"
     ],
     "brandColor": "#0EA5E9",
-    "composerIcon": "./assets/logoicon.svg",
-    "logo": "./assets/logo-edgespark-512.png",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png",
     "screenshots": []
   }
 }
