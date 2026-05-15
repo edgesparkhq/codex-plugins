@@ -17,7 +17,7 @@ The reliable public surface in this repo is:
 - generated `src/__generated__/server-types.d.ts`
 - the `@edgespark/web` browser SDK
 
-Learn from older examples, but do not inherit old patterns blindly. In particular, do not treat `@edgespark/client` and `renderAuthUI()` as the default path for new code.
+Use `@edgespark/web` and `authUI.mount()` as the default browser auth path for this repo unless custom forms are explicitly requested.
 
 ## Read Order
 
@@ -28,7 +28,8 @@ Read only what is needed for the task:
 3. `src/__generated__/edgespark.d.ts`
 4. `src/__generated__/server-types.d.ts`
 5. `src/defs/index.ts`, `src/defs/db_schema.ts`, `src/defs/db_relations.ts`, `src/defs/runtime.ts`, `src/defs/storage_schema.ts`
-6. `node_modules/@edgespark/web/dist/index.d.ts` when installed
+6. `node_modules/@edgespark/web/dist/index.d.ts` when installed for exact browser SDK types
+7. `node_modules/@edgespark/web/README.md` when installed for managed auth appearance variable meanings and defaults
 
 Then load the specific reference you need:
 
@@ -36,7 +37,7 @@ Then load the specific reference you need:
 - Scaffold layout and generated-file rules: [project-structure.md](references/project-structure.md)
 - Error-prone server-side usage patterns: [server-patterns.md](references/server-patterns.md)
 - Small web usage patterns for `@edgespark/web`: [web-patterns.md](references/web-patterns.md)
-- Auth config, OAuth providers, callback URLs: [auth-patterns.md](references/auth-patterns.md)
+- Auth config, OAuth providers, callback URLs, managed auth theming, and Google One Tap: [auth-patterns.md](references/auth-patterns.md)
 
 ## Hard Rules
 
@@ -48,6 +49,7 @@ Then load the specific reference you need:
 - Use `@edgespark/web` for new browser code.
 - Use `es.api.fetch()` for app API calls, not bare `fetch()` to same-origin app routes.
 - Use `authUI.mount()` for managed auth UI unless custom forms are explicitly requested.
+- For managed auth theming, use `appearance.theme` and `appearance.variables` from `@edgespark/web`; do not tell users to edit SDK CSS for routine light/dark or brand theming.
 - For custom browser auth flows, use `client.auth` from `@edgespark/web`, not manual `/api/_es/auth/*` calls.
 - Import `auth` from `edgespark/http`, not `edgespark`.
 - Auth is a managed service at `/api/_es/auth/`. OAuth callback URLs use `/api/_es/auth/callback/<provider>`, not `/api/auth/`.

@@ -1,6 +1,6 @@
 {
   "name": "edgespark",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Build and deploy full-stack EdgeSpark apps from Codex.",
   "author": {
     "name": "EdgeSpark",
